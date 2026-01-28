@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KrydderGutta.eb — Krydder og dip</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">KrydderGutta.eb</h1>
+      <nav class="nav">
+        <a href="#produkter">Produkter</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Velkommen til KrydderGutta</h2>
+        <p>Håndlaget, smakfullt og litt ekstra surt — perfekt for snacks og grill.</p>
+      </div>
+    </section>
+
+    <section id="produkter" class="container produkter">
+      <h2>Våre produkter</h2>
+
+      <div class="produkt-list">
+        <article class="produkt">
+          <h3>Super Sur Mixs</h3>
+          <p class="pris">100 kr</p>
+          <p>Et kraftig, surt krydder med fokus på frisk syre og sterk smak. Perfekt for de som liker ekstra piff.</p>
+          <button onclick="location.href='#kontakt'">Bestill / Spør</button>
+        </article>
+
+        <article class="produkt">
+          <h3>Fredagsdip</h3>
+          <p class="pris">Inspirasjon: Holiday Dip</p>
+          <p>En kremet dip inspirert av Holiday Dip — fin til chips, grønnsaker og som tilbehør på fredagskos.</p>
+          <button onclick="location.href='#kontakt'">Bestill / Spør</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="om" class="container om">
+      <h2>Om oss</h2>
+      <p>KrydderGutta.eb er et lite produsentprosjekt som lager spennende kryddere og dipblandinger. Vi fokuserer på smak og kvalitet.</p>
+    </section>
+
+    <section id="kontakt" class="container kontakt">
+      <h2>Kontakt</h2>
+      <p>Ønsker du å bestille eller har spørsmål? Send oss en e-post eller bruk kontaktskjemaet under.</p>
+
+      <form action="mailto:post@kryddergutta.eb" method="post" enctype="text/plain" class="kontakt-form">
+        <label for="navn">Navn</label>
+        <input id="navn" name="navn" type="text" placeholder="Ditt navn" required>
+
+        <label for="epost">E-post</label>
+        <input id="epost" name="epost" type="email" placeholder="din@mail.no" required>
+
+        <label for="melding">Melding</label>
+        <textarea id="melding" name="melding" rows="4" placeholder="Hva ønsker du?" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© KrydderGutta.eb</p>
+    </div>
+  </footer>
+</body>
+</html>
