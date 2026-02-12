@@ -1,0 +1,117 @@
+:root{
+  --bg:#fff8f2;
+  --accent:#c43d3d;
+  --muted:#666;
+  --container-width:1100px;
+  --radius:8px;
+  --card-bg:#fff;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  margin:0;
+  color:var(--muted);
+  background:linear-gradient(180deg,#fff 0%,#fff8f2 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.container{
+  max-width:var(--container-width);
+  margin:0 auto;
+  padding:1rem;
+}
+
+.site-header{
+  background:var(--card-bg);
+  border-bottom:1px solid #eee;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.brand{
+  margin:0;
+  color:var(--accent);
+}
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  margin-left:1rem;
+}
+.hero{
+  padding:2.5rem 0;
+  text-align:center;
+  background:linear-gradient(90deg, rgba(196,61,61,0.05), rgba(0,0,0,0.01));
+}
+.hero h2{margin:0 0 .25rem 0; color:var(--accent)}
+.hero p{margin:0 0 0.5rem 0; color:#444}
+
+.produkter h2, .om h2, .kontakt h2{color:var(--accent)}
+
+.produkt-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+.produkt{
+  background:var(--card-bg);
+  padding:1rem;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(0,0,0,0.04);
+}
+.pris{
+  font-weight:700;
+  color:var(--accent);
+  margin:0.25rem 0;
+}
+.produkt button{
+  margin-top:.75rem;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:.5rem .75rem;
+  border-radius:6px;
+  cursor:pointer;
+}
+.produkt button:hover{opacity:.95}
+
+.kontakt-form{
+  display:grid;
+  gap:.5rem;
+  margin-top:.5rem;
+  max-width:600px;
+}
+.kontakt-form input, .kontakt-form textarea{
+  padding:.5rem;
+  border:1px solid #e5e5e5;
+  border-radius:6px;
+  width:100%;
+}
+.kontakt-form button{
+  width:fit-content;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:.5rem .75rem;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.site-footer{
+  margin-top:2rem;
+  padding:1rem 0;
+  text-align:center;
+  color:#888;
+  font-size:.9rem;
+}
+@media (prefers-color-scheme:dark){
+  body{background:#0b0b0b;color:#ddd}
+  .site-header,.produkt{background:#0f0f0f;border-color:#1a1a1a}
+  .container{color:#ddd}
+}
